@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SenEchange | Le réseau social Sénégalais pour échanger sur tout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/856fd9ae8b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <ul>
+                <li><img src="images/notification.png" alt=""></li>
+                <li><img src="images/inbox.png" alt=""></li>
+                <li><img src="images/video.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="images/search.png" alt="Image recherche">
+                <input type="text" placeholder="Rechercher">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png" alt="Photo profil">
+            </div>
+
+        </div>
+
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>Mouhamed</p>
+                        <a href="#">Mon Profil</a>
+                    </div>
+                </div>
+                    <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>FeedBack</p>
+                        <a href="#">Besoins de FeedBack</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="images/setting.png" class="setting-icon">
+                    <a href="#">Paramêtres & Configurations <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" class="setting-icon">
+                    <a href="#">Aide & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" class="setting-icon">
+                    <a href="#">Affichage & Accessibilité <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" class="setting-icon">
+                    <a href="#">Déconnexion<img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png" alt="Informations">Informations</a>
+                <a href="#"><img src="images/friends.png" alt="Informations">Mes Relations</a>
+                <a href="#"><img src="images/group.png" alt="Informations">Mes Abonnements</a>
+                <a href="#"><img src="images/marketplace.png" alt="Informations">Achetez</a>
+                <a href="#"><img src="images/watch.png" alt="Informations">Regardez</a>
+                <a href="#">Voir Plus</a>
+            </div>
+
+            <div class="shortcut-links">
+                <p>Personnes suivies</p>
+                <a href="#"><img src="images/shortcut-1.png">Développeur Web</a>
+                <a href="#"><img src="images/shortcut-2.png">Designer</a>
+                <a href="#"><img src="images/shortcut-3.png">Chef de projet Web</a>
+                <a href="#"><img src="images/shortcut-4.png">Community Manager</a> 
+            </div>
+        </div>
+
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Ajouter status</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Sokhna DIOP</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Oumar DIOLY</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Marie TINE</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>Moussa BA</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>Mouhamed</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="Partager vos vos moments funs Mouhamed"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png">En direct</a>
+                        <a href="#"><img src="images/photo.png">Photo/Vidéo</a>
+                        <a href="#"><img src="images/feeling.png">Activités</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Mouhamed</p>
+                            <span>02 Mars 2021, 01:00</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum <span>Solutions Web</span> dolor sit amet consectetur adipisicing elit. Repellendus, hic. <a href="#">#solutionsweb</a>
+                    <a href="#">#agencedigitale</a>
+                </p>
+                <img src="images/feed-image-1.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png">1290</div>
+                        <div><img src="images/comments.png">360</div>
+                        <div><img src="images/share.png">81</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-2.png">
+                        <div>
+                            <p>Bertrand</p>
+                            <span>12 Avril 2021, 12:09</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum <span>Solutions Web</span> dolor sit amet consectetur adipisicing elit. Repellendus, hic. <a href="#">#solutionsweb</a>
+                    <a href="#">#agencedigitale</a>
+                </p>
+                <img src="images/feed-image-2.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png">90</div>
+                        <div><img src="images/comments.png">60</div>
+                        <div><img src="images/share.png">11</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/member-2.png"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Mouhamed</p>
+                            <span>12 Avril 2021, 12:09</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum <span>Solutions Web</span> dolor sit amet consectetur adipisicing elit. Repellendus, hic. <a href="#">#solutionsweb</a>
+                    <a href="#">#agencedigitale</a>
+                </p>
+                <img src="images/feed-image-3.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png">290</div>
+                        <div><img src="images/comments.png">60</div>
+                        <div><img src="images/share.png">8</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/member-3.png">
+                        <div>
+                            <p>Kane</p>
+                            <span>12 Juin 2021, 06:09</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum <span>Solutions Web</span> dolor sit amet consectetur adipisicing elit. Repellendus, hic. <a href="#">#solutionsweb</a>
+                    <a href="#">#web</a>
+                </p>
+                <img src="images/feed-image-4.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png">34</div>
+                        <div><img src="images/comments.png">14</div>
+                        <div><img src="images/share.png">3</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/member-3.png"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Mouhamed</p>
+                            <span>09 Mai 2021, 00:33</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum <span>Solutions Web</span> dolor sit amet consectetur adipisicing elit. Repellendus, hic. <a href="#">#solutionsweb</a>
+                    <a href="#">#agencedigitale</a>
+                </p>
+                <img src="images/feed-image-5.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like.png">120</div>
+                        <div><img src="images/comments.png">30</div>
+                        <div><img src="images/share.png">8</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <button type="button" class="load-more-btn">Charger Plus</button>
+
+        </div>
+
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Evenements</h4>
+                <a href="#">Voir Plus</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>Janvier</span>
+                </div>
+                <div class="right-event">
+                    <h4>Culture Numérique</h4>
+                    <p><i class="fas fa-compass"></i> Thiès, Sénégal| SN</p>
+                    <a href="#">En savoir plus</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>08</h3>
+                    <span>Decembre</span>
+                </div>
+                <div class="right-event">
+                    <h4>Formation WEB</h4>
+                    <p><i class="fas fa-compass"></i> Montreal, Canada | CA</p>
+                    <a href="#">En savoir plus</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Publicité</h4>
+                <a href="#">Fermé</a>
+            </div>
+            <img src="images/advertisement.png" alt="publicité" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Discussions</h4>
+                <a href="#">Masqué le chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="">
+                </div>
+                <p>Sokhna DIOP</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="">
+                </div>
+                <p>Oumar DIOLY</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="">
+                </div>
+                <p>Marie TINE</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-4.png" alt="">
+                </div>
+                <p>Moussa BA</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2021 - Mouhamed | Solutions-web</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
